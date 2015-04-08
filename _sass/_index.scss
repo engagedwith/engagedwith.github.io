@@ -1,0 +1,48 @@
+.story1{
+  margin-top: 20px;
+  @include small-desktop{
+    margin-top: 21px; //8
+  }
+  @include tablet{
+    margin-top: 18px;
+  }
+  @include phone{
+    margin-top: 18px;
+  }
+}
+.story2{
+  margin-top: 10px;
+  @include small-desktop{
+    margin-top: 34px; //8
+  }
+  @include tablet{
+    margin-top: 18px;
+  }
+  @include phone{
+    margin-top: 18px;
+  }
+}
+.story3{
+  margin-top: 21px;
+  @include small-desktop{
+    margin-top: 23px; //6px;
+  }
+  @include tablet{
+    margin-top: 18px;
+  }
+  @include phone{
+    margin-top: 18px;
+  }
+}
+.story4{
+  margin-top: 22px;
+  @include small-desktop{
+    margin-top: 28px; //6px;
+  }
+  @include tablet{
+    margin-top: 18px;
+  }
+  @include phone{
+    margin-top: 18px;
+  }
+}

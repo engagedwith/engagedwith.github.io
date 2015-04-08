@@ -8,7 +8,23 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-//"HelveticaNeue-Light", "Helvetica Neue Light",
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
 /**
  * Variables
  */
@@ -57,34 +73,9 @@ $large-desktop-min-width: 1200px;
 body {
   height: 100%;
 }
-// .wrap {
-//   min-height: 100%;
-//   height: auto !important;
-//   height: 100%;
-//   /* Negative indent footer by it's height */
-//   margin: 0 auto -60px;
-// }
 footer {
   height: 60px;
 }
-h1 {
-  font-family:$header-font-family;
-  font-weight: 700;
-}
-h2, h5, h6{
-  font-family: $header-font-family;
-  font-weight: 700;
-}
-h3, h4 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-h3{
-  font-size: 20px;
-  margin-top: 0;
-  padding-top:0;
-  font-style: italic;
-}
-
 .btn-font{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -96,8 +87,6 @@ dl, dd, ol, ul, figure {
   color: $text-color;
   -webkit-text-size-adjust: 100%;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -115,6 +104,23 @@ p, blockquote, pre,
 ul, ol, dl {
   margin-top: 18px;
 }
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6{
+  font-family: $header-font-family;
+
+}
+h1, h3, h4, h6 {
+  font-weight: 700;
+}
+h2{
+  font-weight: 400;
+  font-size: 26px;
+}
+h5 {
+  font-weight: 300;
+}
 h2{
   margin-bottom: 4px;
 }
@@ -122,29 +128,15 @@ h3{
   margin-top: 2px;
   line-height: 160%
 }
-.reduced1{
-  margin-top: 7px;
-  @include small-desktop{
-    margin-top: 31px; //8
-  }
-  @include tablet{
-    margin-top: 18px;
-  }
-  @include phone{
-    margin-top: 18px;
-  }
-}
-.reduced2{
-  margin-top: 20px;
-  @include small-desktop{
-    margin-top: 22px; //6px;
-  }
-  @include tablet{
-    margin-top: 18px;
-  }
-  @include phone{
-    margin-top: 18px;
-  }
+// h3, h4 {
+//   font-family: Arial, Helvetica, sans-serif;
+// }
+h5{
+  font-size: 20px;
+  margin-top: 0;
+  padding-top:0;
+  line-height: 139%;
+  font-style: italic;
 }
 
 
@@ -155,8 +147,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -185,12 +175,6 @@ li {
   }
 }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
 
 /**
  * Links
@@ -336,7 +320,6 @@ pre {
  * @param {Color} $dark-red-color
  */
 
-
 @mixin simple-button{
   margin:0;
   font-weight:300;
@@ -387,6 +370,7 @@ pre {
   margin: 8px 0;
 }
 .aera-brand-title{
+  font-weight: 700;
   float: left;
   color: #fff;
   font-size: 36px;
