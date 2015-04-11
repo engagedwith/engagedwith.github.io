@@ -1,7 +1,28 @@
   <div class="container">
     <footer>
-      <p>&copy; Joanna Geller 2015</p>
+      <p>&copy; Joanna Geller & James Haley 2015</p>
     </footer>
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="/js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+    var isNaveOpen = false;
+    
+    //open/close lateral navigation
+    $('.cd-nav-trigger').on('click', function(event){
+        console.log(true);
+        event.preventDefault();
+        //stop if nav animation is running 
+        if( !isNaveOpen ) {
+            if($(this).parents('.csstransitions').length > 0 ) isNaveOpen = true; 
+            
+            $('body').toggleClass('navigation-is-open');
+            $('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+                //animation is over
+                isNaveOpen = false;
+            });
+        }
+    });
+});
+</script>

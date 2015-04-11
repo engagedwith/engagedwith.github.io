@@ -1,3 +1,56 @@
+.black-bar{
+    border: none;
+    height: 5px;
+    margin-top: -5px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+.jumbotron {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.89);
+  background-image: url("../images/chicago.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  overflow: hidden;
+  color: #DBDBDB;
+  @include tablet{
+    background-image: none;
+  }
+  @include phone{
+    background-image: none;
+  }
+}
+.jumbotron, .jumbo-group{
+  color: #DBDBDB;
+  // @include tablet{
+  //   color: #222;
+  // }
+  // @include phone{
+  //   color: #222;
+  // }
+}
+
+.page-divider{
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 36px;
+}
+.center-page{
+  margin: 0 auto 36px;
+  text-align: center;
+  width: 50%;
+  @include tablet{
+    text-align: left;
+    width: 100%;
+  }
+  @include phone{
+    text-align: left;
+    width: 100%;
+  }
+}
+
 .story1{
   margin-top: 20px;
   @include small-desktop{

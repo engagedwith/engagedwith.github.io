@@ -1,35 +1,61 @@
-<header class="site-header">
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <div class="col-xs-12">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div>
-            <a href="/">
-              <div class="logo-box">
-                <span><img class="logo" src="/images/engage-logo-01.png"/></span>
-                <span><h2 class="aera-brand-title">Engaged With</h2></span>
-              </div>
-            </a>
-          </div>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-  <!--             <div class="form-group">
-                <input type="text" placeholder="Email" class="form-control">
-              </div>
-              <div class="form-group">
-                <input type="password" placeholder="Password" class="form-control">
-              </div> -->
-              <!-- <button type="submit" class="btn btn-font btn-nav">Content</button> -->
-            </form>
-          </div><!--/.navbar-collapse -->
+<div id="cd-nav" class="cd-nav">
+  <div class="cd-navigation-wrapper">
+    <div>
+      <h2>hidden menu</h2>
+      <h2>hidden menu</h2>
+    </div>
+  </div>
+</div>
+<header><!-- class="site-header" -->
+  <div class="container">
+    <div class="row bottom-line">
+      <div class="menu-size">
+      
+
+        <div class="col-md-6 col-sm-6 col-xs-10">
+          <a href="/">
+            <div class="logo-box"><img class="logo" src="/images/engage-logo-small-03.png"/></div>
+          </a>
         </div>
+
+        <div class="col-md-2 col-sm-4 hidden-xs center-header">
+          <h2 class="no-highlight"><a href="/">AERA</a></h2>
+        </div>
+        <div class="col-md-2 hidden-sm hidden-xs menu-item">
+          <a href="/"><h2>Conference</h2></a>
+        </div>
+        <div class="col-md-1 hidden-sm hidden-xs menu-item">
+          <a href="/"><h2>About</h2></a>
+        </div>
+        <div class="col-md-1 col-xs-2 cd-nav-trigger menu-button">
+          <button class="cmn-toggle-switch cmn-toggle-switch__htra">
+            <span>toggle menu</span>
+          </button>
+        </div>
+      
       </div>
-    </nav>
+    </div>
+    <hr class="hr-spacer">
+  </div>
 </header>
+<script type="text/javascript">
+  (function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
+    });
+  }
+
+})();
+</script>
