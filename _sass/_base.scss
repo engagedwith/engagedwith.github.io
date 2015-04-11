@@ -159,7 +159,7 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
+ul, .myol {
   margin-left: $spacing-unit;
 }
 
@@ -218,7 +218,7 @@ code {
 
 pre {
   padding: 8px 12px;
-  overflow-x: scroll;
+  // overflow-x: scroll;
 
   > code {
       border: 0;
@@ -359,3 +359,7 @@ pre {
   padding-bottom: 45px;
 }
 
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}

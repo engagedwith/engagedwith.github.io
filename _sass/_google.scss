@@ -1,6 +1,4 @@
-.ss-form-container, .ss-resp-card {
-  border: 1px solid #999;
-  border-radius: 4px;
+.ss-form-container {
   margin: 0 auto;
   width: 50%;
   @include tablet{
@@ -10,51 +8,13 @@
     width: 100%
   }
 }
-.ss-form2-container {
-  margin-top: 225px;
-  margin-left: 18px;
-  border: 1px solid #ccc;
+.ss-form-container2 {
+  margin-top: 18px;
+}
+.ss-form-container, .ss-form-container2 {
+  border: 1px solid #999;
   border-radius: 4px;
-  // margin: 0 auto;
-  // width: 50%;
-  // @include tablet{
-  //   width: 100%
-  // }
-  // @include phone{
-  //   width: 100%
-  // }
 }
-.ss-form-title[dir="rtl"] {
-  text-align: right;
-}
-
-.ss-form-desc {
-  text-align: left;
-}
-
-.ss-form-desc[dir="rtl"] {
-  text-align: right;
-}
-
-.ss-header-image-container {
-  height: 0;
-}
-
-.ss-item {
-  font-size: 1.080rem;
-}
-
-.ss-choices {
-  font-size: 1.000rem;
-}
-.ss-record-username-message {
-  font-family: "Roboto";
-  color: rgb(119,119,119);
-  font-weight: 400;
-  font-size: 1.080rem;
-  font-style: normal;
-}
-
 .ss-form-title {
   font-family: "Roboto";
   color: rgb(80,80,80);
@@ -65,23 +25,6 @@
   margin-right: 18px;
   margin-left: 18px;
 }
-
-.ss-confirmation {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 2.460rem;
-  font-style: normal;
-}
-
-.ss-page-title, .ss-section-title {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 1.845rem;
-  font-style: normal;
-}
-
 .ss-form-desc, .ss-page-description, .ss-section-description {
   font-family: "Roboto";
   color: rgb(140,140,140);
@@ -92,15 +35,6 @@
   margin-right: 18px;
   margin-left: 18px;
 }
-
-.ss-resp-content {
-  font-family: "Roboto";
-  color: rgb(119,119,119);
-  font-weight: 400;
-  font-size: 1.080rem;
-  font-style: normal;
-}
-
 .ss-q-title {
   font-family: "Roboto";
   color: rgb(80,80,80);
@@ -110,32 +44,15 @@
   margin-top: 7px;
   margin-bottom: -2px;
 }
-
-.ss-embeddable-object-container .ss-q-title {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 700;
-  font-size: 1.845rem;
-  font-style: normal;
-}
-
-.ss-q-help, .ss-q-time-hint {
+.ss-q-help {
   font-family: "Roboto";
   color: rgb(140,140,140);
   font-weight: 400;
   font-size: 1.000rem;
   font-style: normal;
 }
-
-.ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
 .ss-asterisk{
-  margin-left: 30px;
+  margin-left: 18px;
 }
 .error-message, .required-message, .ss-required-asterisk {
   font-family: "Roboto";
@@ -144,23 +61,14 @@
   font-size: 12px;
   font-style: normal;
 }
-
-.ss-send-email-receipt {
-  font-family: "Roboto";
-  color: rgb(80,80,80);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
 .ss-password-warning {
   font-family: "Arial";
   color: rgb(119,119,119);
   font-weight: 400;
   font-size: 1.000rem;
   font-style: italic;
+  padding-bottom: 15px;
 }
-
 .disclaimer {
   font-family: "Arial";
   color: rgb(119,119,119);
@@ -168,7 +76,6 @@
   font-size: 0.850rem;
   font-style: normal;
 }
-
 .ss-footer-content {
   font-family: "Arial";
   color: rgb(80,80,80);
@@ -176,45 +83,41 @@
   font-size: 1.000rem;
   font-style: normal;
 }
-
-.progress-label {
-  font-family: "Roboto";
-  color: rgb(140,140,140);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-
 input[type='text'], input:not([type]), textarea {
   font-family: $content-font-family;
   font-size: 18px;
 }
-
 .error, .required, .errorbox-bad {
   border-color: rgb(196,59,29);
 }
-
 .jfk-progressBar-nonBlocking .progress-bar-thumb {
   background-color: rgb(140,140,140);
 }
 .docs-a11y-ariascreenreader-speakable{
   display: none;
 }
-.ss-logo-image {
-  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark.png');
-  background-size: 108px 21px;
-  width: 108px;
-  height: 21px;
+.last-input{
+  padding-bottom:50px;
+  @include phone{
+    padding-bottom:68px;
+  }
 }
 .ss-form-entry{
-  margin-right: 30px;
+  display: block;
+  margin-right: 18px;
+  margin-left: 18px;
 }
 .ss-form-entry2{
   margin-right: 18px;
   margin-left: -12px;
 }
 
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark.png');
+  background-size: 108px 21px;
+  width: 108px;
+  height: 21px;
+}
 @media screen and (-webkit-device-pixel-ratio: 2) {
 .ss-logo-image {
   background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_small_dark_2x.png');
