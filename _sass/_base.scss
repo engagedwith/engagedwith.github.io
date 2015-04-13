@@ -32,12 +32,8 @@ $header-font-family: 'Roboto Condensed', "Arial Black",Arial, Helvetica, sans-se
 $text-color: #222;
 $dark-red-color: #b0010e;
 
-$facebook-color: rgb(59, 89, 151);
-$twitter-color: rgb(64, 153, 255);
-$youtube-color: rgb(117, 117, 117);
-$reddit-color: rgb(31, 89, 111);
 $header-aera-color: #536A80;
-$link-color: #3BA0FF;
+$link-color: #437CB3;
 $orientation-color: rgb(76, 43, 98);
 
 $tablet-min-width: 768px;
@@ -49,19 +45,16 @@ $large-desktop-min-width: 1200px;
     @content;
   }
 }
-
 @mixin tablet {
   @media (min-width: #{$tablet-min-width}) and (max-width: #{$small-desktop-min-width - 1px}) {
     @content;
   }
 }
-
 @mixin small-desktop {
   @media (min-width: #{$small-desktop-min-width}) and (max-width: #{$large-desktop-min-width - 1px}) {
     @content;
   }
 }
-
 @mixin large-desktop {
   @media (min-width: #{$large-desktop-min-width}) {
     @content;
@@ -172,14 +165,15 @@ li {
 /**
  * Links
  */
+
 a {
-  color: #333;
+  color: $link-color;
   text-decoration: none;
   &:visited {
-    color: #333;
+    color: $link-color;
   }
   &:hover {
-    color: $text-color;
+    color: darken( $link-color, 5% );
     text-decoration: underline;
   }
 }
