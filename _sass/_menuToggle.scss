@@ -140,12 +140,21 @@
   background-color: #fff;
   box-shadow: -1px 1px 5px #333;
   height: 100%;
-  width: 300px;
+  width: 25%;
   background-color: #FFF;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.3s;
   -moz-transition: visibility 0s 0.3s;
   transition: visibility 0s 0.3s;
+  @include small-desktop{
+    width: 300px;
+  }
+  @include tablet{
+    width: 300px;
+  }
+  @include phone{
+    width: 300px;
+  }
 }
 .cd-navigation-wrapper {
   /* all navigation content sliding inward*/
